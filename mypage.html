@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>마이페이지 - snowpedia</title>
+
+  <!-- 구글폰트: 나눔고딕 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" />
+
+  <!-- 외부 CSS -->
+  <link rel="stylesheet" href="mypage.css">
+</head>
+<body>
+
+  <!-- ===== 헤더 (메인 페이지와 통일) ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="images/snowpedia-logo.png" alt="snowpedia" />
+      </a>
+      <nav class="main-nav">
+        <a href="#">영화</a>
+        <a href="#">시리즈</a>
+        <a href="#">책</a>
+      </nav>
+      <div class="search-box">
+        <span class="search-icon"></span>
+        <input type="text" placeholder="콘텐츠, 인물, 컬렉션, 유저를 검색해보세요." />
+      </div>
+      <div class="account-links">
+        <a href="#">알림</a>
+        <a href="#" class="button signup">내 계정</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container container-main">
+
+    <!-- ===== 1. 프로필 ===== -->
+    <section class="section profile-section">
+      <div class="profile">
+        <div class="profile-img"><img src="images/profile.png"></div>
+        <div class="profile-info">
+          <h1 class="profile-name">송이버섯</h1>
+          <p class="profile-id">@song-song</p>
+          <div class="profile-btns">
+            <button class="button-line">프로필 수정</button>
+            <button class="button-line">프로필 공유</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. 보관함 ===== -->
+    <section class="section">
+      <div class="section-heading">
+        <h2>보관함</h2>
+      </div>
+
+      <div class="library-row">
+        <div class="library-item">
+          <button class="library-btn"><img src="images/icon.svg" style="width: 100%; height: 100%; overflow: hidden;"></button>
+          <span class="library-label">영화</span>
+        </div>
+        <div class="library-item">
+          <button class="library-btn"><img src="images/icon.svg" style="width: 100%; height: 100%; overflow: hidden;"></button>
+          <span class="library-label">시리즈</span>
+        </div>
+        <div class="library-item">
+          <button class="library-btn"><img src="images/icon.svg" style="width: 100%; height: 100%; overflow: hidden;"></button>
+          <span class="library-label">책</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. 최근의 평가 ===== -->
+    <section class="section">
+      <div class="section-heading">
+        <h2>최근의 평가</h2>
+      </div>
+
+      <div class="poster-row">
+        <div class="poster-card">
+          <div class="poster"><img src="images/poster.jpg" alt="포스터" /></div>
+          <div class="rating">★★★★☆</div>
+        </div>
+        <div class="poster-card">
+          <div class="poster"><img src="images/poster.jpg" alt="포스터" /></div>
+          <div class="rating">★★★☆☆</div>
+        </div>
+        <div class="poster-card">
+          <div class="poster"><img src="images/poster.jpg" alt="포스터" /></div>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <button class="btn-row">&gt;</button>
+      </div>
+    </section>
+
+    <!-- ===== 4. 최근의 코맨트 ===== -->
+    <section class="section">
+      <div class="section-heading">
+        <h2>최근의 코맨트</h2>
+        <a href="#" class="text-link">더보기 →</a>
+      </div>
+
+      <div class="comment-cal">
+        <div class="comment-card">
+          <div class="comment-name">오디세이</div>
+          <div class="comment">평범했다</div>
+          <div class="comment-rating">★ 2.5</div>
+        </div>
+        <div class="comment-card">
+          <div class="comment-name">극장판 치이카와-인어 섬의 비밀</div>
+          <div class="comment">아주 재밌었다. 또 보고 싶다. 너무 감동적이라서 눈물을 흘렸다. 내 친구들에게도 전부 보여주고 싶다.</div>
+          <div class="comment-rating">★ 5.0</div>
+        </div>
+        <div class="comment-card">
+          <div class="comment-name">퀸크랩의 습격</div>
+          <div class="comment">최악의 영화. 이 영화를 본 기억을 지우고 싶다.</div>
+          <div class="comment-rating">★ 1.0</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. 캘린더 ===== -->
+    <section class="section">
+      <div class="section-heading">
+        <h2>캘린더</h2>
+        <div class="cal-nav">
+          <button class="text-link">&lt;</button>
+          <span>2026. 10</span>
+          <button class="text-link">&gt;</button>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <!-- 요일 헤더 -->
+        <div class="cal-weekday">일</div>
+        <div class="cal-weekday">월</div>
+        <div class="cal-weekday">화</div>
+        <div class="cal-weekday">수</div>
+        <div class="cal-weekday">목</div>
+        <div class="cal-weekday">금</div>
+        <div class="cal-weekday">토</div>
+
+        <!-- 2026.10.01 은 목요일 → 앞에 빈 칸 4개(일/월/화/수) -->
+        <div class="cal-cell cal-empty"></div>
+        <div class="cal-cell cal-empty"></div>
+        <div class="cal-cell cal-empty"></div>
+        <div class="cal-cell cal-empty"></div>
+
+        <!-- 포스터 있는 날은 날짜 없이 포스터로 꽉 채움(.cal-cell.has-poster) -->
+        <div class="cal-cell"><span class="cal-date">1</span></div>
+        <div class="cal-cell"><span class="cal-date">2</span></div>
+        <div class="cal-cell has-poster"><div class="cal-poster"><img src="images/poster.jpg" alt="포스터" /></div></div>
+        <div class="cal-cell"><span class="cal-date">4</span></div>
+        <div class="cal-cell"><span class="cal-date">5</span></div>
+        <div class="cal-cell"><span class="cal-date">6</span></div>
+        <div class="cal-cell has-poster"><div class="cal-poster"><img src="images/poster.jpg" alt="포스터" /></div></div>
+
+        <div class="cal-cell"><span class="cal-date">8</span></div>
+        <div class="cal-cell"><span class="cal-date">9</span></div>
+        <div class="cal-cell"><span class="cal-date">10</span></div>
+        <div class="cal-cell has-poster"><div class="cal-poster"><img src="images/poster.jpg" alt="포스터" /></div></div>
+        <div class="cal-cell"><span class="cal-date">12</span></div>
+        <div class="cal-cell"><span class="cal-date">13</span></div>
+        <div class="cal-cell"><span class="cal-date">14</span></div>
+
+        <div class="cal-cell"><span class="cal-date">15</span></div>
+        <div class="cal-cell"><span class="cal-date">16</span></div>
+        <div class="cal-cell has-poster"><div class="cal-poster"><img src="images/poster.jpg" alt="포스터" /></div></div>
+        <div class="cal-cell"><span class="cal-date">18</span></div>
+        <div class="cal-cell"><span class="cal-date">19</span></div>
+        <div class="cal-cell"><span class="cal-date">20</span></div>
+        <div class="cal-cell"><span class="cal-date">21</span></div>
+
+        <div class="cal-cell"><span class="cal-date">22</span></div>
+        <div class="cal-cell has-poster"><div class="cal-poster"><img src="images/poster.jpg" alt="포스터" /></div></div>
+        <div class="cal-cell"><span class="cal-date">24</span></div>
+        <div class="cal-cell"><span class="cal-date">25</span></div>
+        <div class="cal-cell"><span class="cal-date">26</span></div>
+        <div class="cal-cell"><span class="cal-date">27</span></div>
+        <div class="cal-cell"><span class="cal-date">28</span></div>
+
+        <div class="cal-cell"><span class="cal-date">29</span></div>
+        <div class="cal-cell has-poster"><div class="cal-poster"><img src="images/poster.jpg" alt="포스터" /></div></div>
+        <div class="cal-cell"><span class="cal-date">31</span></div>
+      </div>
+
+      <div class="section-bottom center">
+        <button class="button-line">캘린더 전체보기</button>
+      </div>
+    </section>
+
+    <!-- ===== 6. 취향요약 (별점 분포 그래프) ===== -->
+    <section class="section">
+      <div class="section-heading">
+        <h2>취향요약</h2>
+      </div>
+
+      <div class="rating-graph">
+        <div class="bar" style="height: 20%"></div>
+        <div class="bar" style="height: 10%"></div>
+        <div class="bar" style="height: 35%"></div>
+        <div class="bar" style="height: 25%"></div>
+        <div class="bar" style="height: 55%"></div>
+        <div class="bar" style="height: 45%"></div>
+        <div class="bar" style="height: 80%"></div>
+        <div class="bar" style="height: 70%"></div>
+        <div class="bar" style="height: 100%"></div>
+        <div class="bar" style="height: 60%"></div>
+      </div>
+      <div class="rating-axis">
+        <span>0.5</span>
+        <span>5.0</span>
+      </div>
+
+      <div class="section-bottom center">
+        <button class="button-line">다른 분석 보기</button>
+      </div>
+    </section>
+
+    <!-- ===== 7. 좋아요 ===== -->
+    <section class="section">
+      <div class="section-heading">
+        <h2>좋아요</h2>
+      </div>
+
+      <!-- 좋아한 인물 -->
+      <div class="liked-head">
+        <span class="liked-title">좋아한 인물 3</span>
+        <a href="#" class="text-link">더보기 →</a>
+      </div>
+      <div class="liked-card">
+        <div class="liked-one">
+          <div class="liked-poster"><img src="images/profile.png"></div>
+          <div class="liked-name">김명신</div>
+        </div>
+        <div class="liked-one">
+          <div class="liked-poster"><img src="images/profile.png"></div>
+          <div class="liked-name">이순헌</div>
+        </div>
+        <div class="liked-one">
+          <div class="liked-poster"><img src="images/profile.png"></div>
+          <div class="liked-name">박진리</div>
+        </div>
+      </div>
+
+      <!-- 좋아한 코맨트 -->
+      <div class="liked-head">
+        <span class="liked-title">좋아한 코맨트 1</span>
+        <a href="#" class="text-link">더보기 →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== 푸터 (메인과 통일) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <a href="#" class="logo"><img src="images/snowpedia-logo.png" alt="snowpedia" /></a>
+    </div>
+  </footer>
+
+</body>
+</html>
